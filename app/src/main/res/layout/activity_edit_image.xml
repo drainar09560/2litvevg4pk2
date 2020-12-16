@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditImageActivity"
+    android:background="@android:color/black">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            android:onClick="Rotate_90"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:background="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:onClick="Rotate_09"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:background="@drawable/ic_baseline_loop_24"
+            android:onClick="Rotate_180"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:background="@drawable/ic_baseline_aspect_ratio_24"
+            android:onClick="Reflect"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+</FrameLayout>
+
